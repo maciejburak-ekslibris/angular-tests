@@ -1,0 +1,14 @@
+
+<div class="user">
+    <img src="{{student?.photo}}" style="width: 20%" alt="" />
+    <p>Imie: {{ student?.firstName }}</p>
+    <p>Nazwisko: {{ student?.lastName }}</p>
+    <p>
+        Data urodzenia: {{createData()}}
+    </p>
+    <p>Lata praktyki: {{ student?.practiseInYears }}</p>
+    {{student?.skills}}
+</div>
+
+
+

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="grid-wrapper">
+    <div
+      class="grid-column"
+      *ngFor="let title of columnTitles"
+    >
+      <strong>{{ title }}</strong>
+    </div>
+  </div>
+  <div *ngFor="let project of filterExactProjects()">
+    <div class="grid-wrapper">
+      <div class="grid-row">{{ project.company }}</div>
+      <div class="grid-row">{{ project.name }}</div>
+      <div class="grid-row">{{dateFormat(project.from)}}</div>
+      <div class="grid-row">{{dateFormat(project.to)}}</div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,18 @@
+.container {
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.grid-column,
+.grid-row {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.grid-wrapper {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 3fr 5fr 2fr 2fr;
+  grid-auto-rows: minmax(30px, auto);
+  gap: 2px;
+}

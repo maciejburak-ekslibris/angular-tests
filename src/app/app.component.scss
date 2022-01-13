@@ -1,0 +1,69 @@
+@import "../styles/global.scss";
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: 0 5px;
+  }
+  .mx-datepicker {
+    width: 100%;
+  }
+  .mx-input {
+    display: block;
+  }
+  .input {
+    flex-direction: row;
+    box-sizing: border-box;
+    height: 34px;
+  
+    padding: 6px 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .user {
+    flex-basis: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 17px;
+    color: #2c3e50;
+    text-align: left;
+    img {
+      min-width: 150px;
+      min-height: 150px;
+    }
+  }
+  .student {
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .btnContainer {
+    .editBtn {
+      margin: 1.5rem auto;
+    }
+    .confirmEdit {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $main-color-green;
+    }
+  }
+  .btnContainer {
+    .editBtn {
+      margin: 1.5rem auto;
+    }
+    .confirmEdit {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $main-color-green;
+    }
+  }
+  

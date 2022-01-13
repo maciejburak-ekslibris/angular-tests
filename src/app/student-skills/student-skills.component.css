@@ -1,0 +1,43 @@
+.rate {
+  display: flex;
+}
+
+.categorySelect {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.toggleItem {
+  display: inline;
+}
+.container-skills {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+.grid-column-skills,
+.grid-row-skills {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+}
+.grid-wrapper-skills {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-auto-rows: minmax(30px, auto);
+  gap: 2px;
+}
+.gridItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  margin: 10px;
+}
+strong{
+  margin-left: 40%;
+}

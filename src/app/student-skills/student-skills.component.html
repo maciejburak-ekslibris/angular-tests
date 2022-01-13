@@ -1,0 +1,40 @@
+<div class="container-skills">
+    <h2 class="title">
+      <strong> Umiejętności stażysty </strong>
+    </h2>
+    <div class="grid-wrapper-skills">
+        <div
+          *ngFor="let category of categories | keyvalue"
+          class="grid-column-skills full-width-row"
+        >
+          <strong>{{ category.value.name }}</strong>
+          <div *ngFor="let exactSkill of getSkillByCategory(category.value.id)">
+            <span class="gridItem">
+              {{ exactSkill.name }}
+              <div class="rate">
+                <div *ngIf="exactSkill.rate">poziom znajomości: &nbsp;
+                  {{ exactSkill.rate }}
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+        <span class="gridItem">
+          <div>
+            Nazwa umiejętności
+            <input type="text" [(ngModel)] = "skillName" value="{{skillName}}"/>
+          </div>
+          <div>
+            Rate umiejętności
+            <input type="number" [(ngModel)] = "skillRate">
+          </div>
+          <div>
+            Kategoria umiejętności
+            <select type="text" [(ngModel)] = "skillCategory">
+              <option *ngFor="let category of categories | keyvalue"  value="{{category.value.name}}">{{category.value.name}}</option>
+            </select>
+          </div>
+          <button (click) = "addNewSkill()">Dodaj</button>
+        </span>
+      </div>
+  </div>
